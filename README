@@ -55,6 +55,19 @@ For example, if you define a :time format named :release_date, you can use Time.
 You should always define a format named :default for both, :date and :time, that serves as the default format. You can
 use the default format by simply writing Time.now.to_s without passing an additional parameter.
 
+You can either use a strftime compatible formatting string or a Proc that returns a strftime formatting string as a
+date/time format. Take a look at the following examples:
+
+  :short => "%d %B, %H:%M" # => "03 August, 22:49"
+  :long => lambda { |time| "%A, #{time.day}. %B %Y, %H:%M" } # => "Samstag, 3. August 2008, 22:49"
+  
+Please note that the use of Procs is slightly different from Rails' original behavior:
+
+  old: :long => lambda { |time| time.strftime("%A, #{time.day}. %B %Y, %H:%M") }
+  new: :long => lambda { |time| "%A, #{time.day}. %B %Y, %H:%M" }
+  
+For further information on strftime formatting, see http://ruby-doc.org/core/classes/Time.html#M000139.
+
 Customizing day and month names
 =================
 
