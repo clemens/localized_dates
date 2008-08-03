@@ -8,6 +8,7 @@ Installation
 =================
 
 To install the plugin, change into an existing Rails application and run
+
   ruby script/plugin install git://github.com/clemens/localized_dates.git
 
 This will download the plugin and store it in vendor/plugins/localized_dates. It will also create a directory named
