@@ -68,6 +68,13 @@ Please note that the use of Procs is slightly different from Rails' original beh
   
 For further information on strftime formatting, see http://ruby-doc.org/core/classes/Time.html#M000139.
 
+Check installed locales
+=================
+
+To display a list of all locales installed in config/locales, you can use the following rake command:
+
+  rake locales
+
 Customizing day and month names
 =================
 
