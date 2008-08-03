@@ -66,6 +66,8 @@ Please note that the use of Procs is slightly different from Rails' original beh
   old: :long => lambda { |time| time.strftime("%A, #{time.day}. %B %Y, %H:%M") }
   new: :long => lambda { |time| "%A, #{time.day}. %B %Y, %H:%M" }
   
+The old way should still work without throwing error messages, however, the dates and times will not be localized.
+
 For further information on strftime formatting, see http://ruby-doc.org/core/classes/Time.html#M000139.
 
 Check installed locales
