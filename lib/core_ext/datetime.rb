@@ -14,5 +14,3 @@
   end
   alias_method :to_s, :to_formatted_s
 end
-
-puts '... l10n DateTime hack loaded!'

@@ -19,5 +19,3 @@ end
   :number       => "%Y%m%d",
   :rfc822       => "%e %b %Y"
 })
-
-puts '... l10n Date hack loaded!'

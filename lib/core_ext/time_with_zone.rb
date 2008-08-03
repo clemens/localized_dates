@@ -14,5 +14,3 @@ ActiveSupport::TimeWithZone.class_eval do
     I18n.localize(self, :format => format_to_localize)
   end
 end
-
-puts '... l10n TimeWithZone hack loaded!'

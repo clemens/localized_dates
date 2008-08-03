@@ -19,5 +19,3 @@ end
   :number       => "%Y%m%d%H%M%S",
   :rfc822       => "%a, %d %b %Y %H:%M:%S %z"
 })
-
-puts '... l10n Time hack loaded!'

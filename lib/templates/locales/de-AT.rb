@@ -17,17 +17,7 @@ I18n.backend.store_translations :'de-AT', {
       :time         => "%H:%M Uhr",
       :short        => lambda { |time| "#{time.day}. %B, %H:%M Uhr" },
       :long         => lambda { |time| "%A, #{time.day}. %B %Y, %H:%M Uhr" }
-    },
-    :datetime => {
-      :formats => {
-        :default => "%Y-%m-%dT%H:%M:%S%Z"
-      }
-    },
-    :time_with_zone => {
-      :formats => {
-        :default => lambda { |time| "%d.%m.%Y, %H:%M:%S #{time.formatted_offset(false, 'UTC')}" }
-      }
-    },
+    }
     :am => '',
     :pm => ''
   }
