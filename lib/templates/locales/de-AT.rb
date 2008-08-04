@@ -17,7 +17,7 @@ I18n.backend.store_translations :'de-AT', {
       :time         => "%H:%M Uhr",
       :short        => lambda { |time| "#{time.day}. %B, %H:%M Uhr" },
       :long         => lambda { |time| "%A, #{time.day}. %B %Y, %H:%M Uhr" }
-    }
+    },
     :am => '',
     :pm => ''
   }
