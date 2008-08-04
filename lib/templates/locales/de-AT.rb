@@ -3,7 +3,7 @@ I18n.backend.store_translations :'de-AT', {
     :formats => {
       :default      => "%d.%m.%Y",
       :short        => lambda { |date| "#{date.day}. %b" },
-      :long         => lambda { |date| "#{date.day}. %b %Y" }
+      :long         => lambda { |date| "#{date.day}. %B %Y" }
     },
     :day_names => %w(Sonntag Montag Dienstag Mittwoch Donnerstag Freitag Samstag),
     :abbr_day_names => %w(So Mo Di Mi Do Fr Sa),
@@ -15,7 +15,7 @@ I18n.backend.store_translations :'de-AT', {
     :formats => {
       :default      => lambda { |time| "%A, #{time.day}. %B %Y, %H:%M Uhr" },
       :time         => "%H:%M Uhr",
-      :short        => lambda { |time| "#{time.day}. %B, %H:%M Uhr" },
+      :short        => lambda { |time| "#{time.day}.%m., %H:%M Uhr" },
       :long         => lambda { |time| "%A, #{time.day}. %B %Y, %H:%M Uhr" }
     },
     :am => '',
