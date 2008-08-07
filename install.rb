@@ -7,3 +7,5 @@ locales_template_dir = File.join(File.dirname(__FILE__), 'lib', 'templates', 'lo
 ['en-US.rb', 'de-AT.rb'].each do |locale|
   FileUtils.cp(File.join(locales_template_dir, locale), File.join(locales_dir, locale))
 end
+
+puts 'Copied locales to config/locales.'
