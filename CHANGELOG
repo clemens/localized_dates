@@ -1,5 +1,6 @@
 [2 October 2008]
 * Update initialization to work with latest change to Rails I18n. (Aslak Hellesøy)
+* Update localized_dates.rb to use Rails.logger instead of puts. (Andreas Korth)
 
 [30 August 2008]
 * Support new Rails i18n style for loading/storing translation (YAML and newly structured rb files). See
