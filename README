@@ -127,6 +127,11 @@ default. Simply put the following line in an initializer in config/initializers 
 
     I18n.default_locale = 'de-AT'
 
+Contributors
+=================
+
+* Aslak Hellesøy (http://blog.aslakhellesoy.com/)
+
 Bugs and Feedback
 =================
 
