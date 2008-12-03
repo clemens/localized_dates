@@ -4,8 +4,8 @@ describe "Date and Time localization" do
   before(:each) do
     # load locale files
     locales_dir = File.dirname(__FILE__) + "/../lib/templates/locales"
-    I18n.load_translations("#{locales_dir}/en.rb")
-    I18n.load_translations("#{locales_dir}/en.yml")
+    I18n.load_path << "#{locales_dir}/en.rb"
+    I18n.load_path << "#{locales_dir}/en.yml"
 
     # set up defaults
     @date_defaults = { :default      => "%Y-%m-%d",
